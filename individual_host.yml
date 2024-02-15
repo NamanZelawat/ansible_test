@@ -1,0 +1,27 @@
+---
+
+- hosts: server1
+  become: true
+  tasks:
+
+  - name: install apache
+    package:
+      name:
+        - "{{ apache_package }}"
+      state: latest
+      update_cache: yes
+    when: ansible_distribution == "Ubuntu"
+
+
+- hosts: server2
+  become: true
+  tasks:
+  
+  - name: install php
+    package:
+      name:
+        - "{{ php_package }}"
+      state: latest
+      update_cache: yes
+
+
