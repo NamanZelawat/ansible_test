@@ -2,7 +2,7 @@
 
 - hosts: server1
   become: true
-  tasks:
+  pre_tasks:
 
   - name: install apache
     package:
