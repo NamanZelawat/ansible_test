@@ -1,2 +1,2 @@
-naman@192.168.11.8
-naman1@192.168.11.9
+naman@192.168.11.8 apache_package=apache2 php_package=libapache2-mod-php
+naman1@192.168.11.9 apache_package=apache2 php_package=libapache2-mod-php
